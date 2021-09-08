@@ -43,7 +43,7 @@ function Header() {
           alt="Profile Picture"
         />
 
-        <p className="whitespace-nowrap font-semibold pr-3">Kha Le</p>
+        <p className="whitespace-nowrap font-semibold pr-3">{ session.user.name }</p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
         <BellIcon className="icon" />

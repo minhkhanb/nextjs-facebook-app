@@ -11,6 +11,7 @@ module.exports = {
       'scontent.fsgn5-6.fna.fbcdn.net',
       'scontent-xsp1-3.xx.fbcdn.net',
       'scontent-xsp1-2.xx.fbcdn.net',
+      'firebasestorage.googleapis.com',
       'links.images.com',
       'external.images.domain',
     ],

@@ -12,7 +12,7 @@ module.exports = {
       "scontent-xsp1-3.xx.fbcdn.net",
       "scontent-xsp1-2.xx.fbcdn.net",
       "links.images.com",
-      "external.images.domain"
-    ]
-  }
-}
+      "external.images.domain",
+    ],
+  },
+};

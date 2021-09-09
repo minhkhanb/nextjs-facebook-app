@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
   },
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+    "firebase": "^9.0.1",
     "next": "11.1.2",
     "next-auth": "^3.29.0",
     "react": "17.0.2",
@@ -19,7 +21,21 @@
     "autoprefixer": "^10.3.4",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "postcss": "^8.3.6",
+    "prettier": "^2.4.0",
     "tailwindcss": "^2.2.11"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": "eslint --fix",
+    "*.+(json|css|md)": "prettier --write"
   }
 }

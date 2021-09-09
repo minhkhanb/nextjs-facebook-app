@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 function SidebarRow({ src, Icon, title }) {
   return (
@@ -15,11 +15,9 @@ function SidebarRow({ src, Icon, title }) {
       )}
 
       {Icon && <Icon className="h-8 w-8 text-blue-500" />}
-      <p className="hidden sm:inline-flex font-medium">
-        {title}
-      </p>
+      <p className="hidden sm:inline-flex font-medium">{title}</p>
     </div>
-  )
+  );
 }
 
 export default SidebarRow;

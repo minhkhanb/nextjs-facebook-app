@@ -1,16 +1,16 @@
-import { useSession } from "next-auth/client";
+import { useSession } from 'next-auth/client';
 import {
   ChevronDownIcon,
   ShoppingBagIcon,
   UserGroupIcon,
-} from "@heroicons/react/outline";
+} from '@heroicons/react/outline';
 import {
   CalendarIcon,
   ClockIcon,
   DesktopComputerIcon,
   UsersIcon,
-} from "@heroicons/react/solid";
-import SidebarRow from "./SidebarRow";
+} from '@heroicons/react/solid';
+import SidebarRow from './SidebarRow';
 
 function Sidebar() {
   const [session, loading] = useSession();

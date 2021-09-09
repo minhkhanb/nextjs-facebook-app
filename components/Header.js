@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 import {
   BellIcon,
   ChatIcon,
@@ -6,15 +6,15 @@ import {
   HomeIcon,
   UserGroupIcon,
   ViewGridIcon,
-} from "@heroicons/react/solid";
+} from '@heroicons/react/solid';
 import {
   FlagIcon,
   PlayIcon,
   SearchIcon,
   ShoppingCartIcon,
-} from "@heroicons/react/outline";
-import HeaderIcon from "./HeaderIcon";
-import { signOut, useSession } from "next-auth/client";
+} from '@heroicons/react/outline';
+import HeaderIcon from './HeaderIcon';
+import { signOut, useSession } from 'next-auth/client';
 
 function Header() {
   const [session] = useSession();
@@ -24,7 +24,7 @@ function Header() {
       {/* Left */}
       <div className="flex items-center">
         <Image
-          src={require("../images/facebook-logo.png")}
+          src={require('../images/facebook-logo.png')}
           width={40}
           height={40}
           layout="fixed"

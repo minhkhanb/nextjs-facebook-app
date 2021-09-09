@@ -1,5 +1,5 @@
-import Stories from "./Stories";
-import InputBox from "./InputBox";
+import Stories from './Stories';
+import InputBox from './InputBox';
 
 function Feed() {
   return (

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.4",
@@ -35,7 +35,6 @@
     }
   },
   "lint-staged": {
-    "*.+(js|jsx)": "next lint --fix",
-    "*.+(json|css|md)": "prettier --write"
+    "*.{js,jsx,ts,tsx}": ["next lint --fix", "git add"]
   }
 }

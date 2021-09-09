@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { signIn } from "next-auth/client";
+import Image from 'next/image';
+import { signIn } from 'next-auth/client';
 
 function Login() {
   return (
     <div className="grid place-items-center">
       <Image
-        src={require("../images/facebook-logo.png")}
+        src={require('../images/facebook-logo.png')}
         height={400}
         width={400}
         objectFit="contain"

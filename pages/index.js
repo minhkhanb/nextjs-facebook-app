@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Header from "../components/Header";
-import { getSession } from "next-auth/client";
-import Login from "../components/Login";
-import Sidebar from "../components/Sidebar";
-import Feed from "../components/Feed";
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import Header from '../components/Header';
+import { getSession } from 'next-auth/client';
+import Login from '../components/Login';
+import Sidebar from '../components/Sidebar';
+import Feed from '../components/Feed';
 
 export default function Home({ session }) {
   if (!session) return <Login />;

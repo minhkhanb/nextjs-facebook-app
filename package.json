@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.4",
-    "firebase": "^9.0.1",
+    "firebase": "8.6.1",
     "next": "11.1.2",
     "next-auth": "^3.29.0",
     "react": "17.0.2",
@@ -35,6 +35,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["next lint --fix", "git add"]
+    "*.{js,jsx,ts,tsx}": [
+      "next lint --fix",
+      "git add"
+    ]
   }
 }

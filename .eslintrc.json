@@ -3,12 +3,17 @@
   "env": {
     "node": true
   },
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:@next/next/recommended",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": 2020
   },
   "rules": {
-    "prettier/prettier": ["error", { "singleQuote": true }],
+    "prettier/prettier": ["error", { "singleQuote": true, "semi": true }],
     "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "overrides": [
